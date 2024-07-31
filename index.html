@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搖滾火箭開學季 - 全力應援：珍貴虛寶與 ASUS AI 筆電送給你!</title>
+
+    <!-- FB 社群分享 -->
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:title" content="搖滾火箭開學季 - 全力應援：珍貴虛寶與 ASUS AI 筆電送給你!">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="活動期間只要購買指定面額「通用卡500點」，直接儲值至指定遊戲的遊戲帳號內，將可獲得轉動輪盤的機會，有各項大獎以及「童話online」和「天外online」專屬珍貴虛寶，最高有機會可獲得ASUS AI筆電！每儲值「通用卡500點」可獲得一次抽獎機會，獎勵可累計抽取">
+    <meta property="og:url" content="https://活動網址/">
+    <meta property="og:image" content="https://活動網址/assets/images/fb-1200x640.jpg"><!--圖檔路徑需改成絕對路徑-->
+    <meta property="og:site_name" content="搖滾火箭開學季 - 全力應援：珍貴虛寶與 ASUS AI 筆電送給你!">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/sweetalert2.js"></script>
+
+    <link rel="stylesheet" href="assets/css/all.css?v=1.0">
+
+</head>
+<body>
+
+    <!-- 
+        .ossian 的狀態有兩種
+        * 未登入搖滾火箭 <div class="ossian">
+        * 已登入搖滾火箭 <div class="ossian logout">
+    -->
+    <div class="ossian">
+
+
+
+        <!-- 網站標題、活動時間、活動說明、會員資訊、轉盤及通路.......................................... -->
+        <section class="zone-1">
+
+
+            <!-- 產品LOGO及連結 -->
+
+            <ul class="logos">
+                <li>
+                    <a href="https://www.rocketgames.com.tw/index/index" target="_blank" class="rocket-games"><img src="assets/images/logo/rocket-games.png" alt="搖滾火箭"></a>
+                </li>
+                <li>
+                    <div class="products-logo">
+                        <a href="https://nfl.lager.com.tw/event/nfl_ob/index.html" target="_blank" class="product-logo nfl"><img src="assets/images/logo/nfl-logo.png" alt="童話LOGO"></a>
+                        <a href="https://mo.lager.com.tw/default/intro" target="_blank" class="product-logo mo"><img src="assets/images/logo/mo-logo.png" alt="天外LOGO"></a>
+                    </div><!--.products-logo end-->
+                </li>
+            </ul><!--.logos end-->
+
+
+            <!-- 網站標題 -->
+            <figure class="site-title"><img src="assets/images/site-title.png" alt="搖滾火箭開學季 - 全力應援：珍貴虛寶與 ASUS AI 筆電送給你!"></figure><!--.site-title end-->
+
+
+
+            <!-- 活動時間及說明 -->
+            <div class="time-description">
+                <div class="act-container">
+                    <!-- 活動時間 -->
+                    <dl class="act-time">
+                        <dt>
+                            <figure class="yellow-title"><img src="assets/images/paper/yellow-title.png"></figure>
+                        </dt>
+                        <dd>
+                            <figure class="h2-title"><img src="assets/images/h2-title-1.png" alt="活動時間"></figure>
+                            <div>2024/9/4 16:00~9/25 13:59</div>
+                        </dd>
+                    </dl><!--.act-title end-->
+                    <!-- 活動說明 -->
+                     <div class="act-description">
+                        <figure class="h2-title"><img src="assets/images/h2-title-2.png" alt=""></figure>
+                        <p>活動期間只要購買指定面額「<em>通用卡500點</em>」，直接儲值至指定遊戲的遊戲帳號內，將可獲得轉動輪盤的機會，有各項大獎以及「<em class="game">童話online</em>」和「<em class="game">天外online</em>」專屬珍貴虛寶，最高有機會可獲得ASUS AI筆電！</p>
+                        <p>每儲值「<em>通用卡500點</em>」可獲得一次抽獎機會，獎勵可累計抽取。</p>
+                     </div><!--.act-description end-->
+                </div><!--.act-container end-->
+            </div><!--.time-description end-->
+
+
+            <!-- 會員資訊、轉盤及通路 -->
+             <div class="game-container">
+
+
+
+                <!-- 會員資訊 -->
+                 <div class="member-panel">
+                    <figure class="h2-title"><img src="assets/images/h2-title-3.png" alt="會員資訊"></figure><!--.member-title end-->
+                    <!-- 會員登出及登入 -->
+                    <div class="login-and-logout">
+                        <!-- 登入 -->
+                        <div class="member-login">
+                            <button class="btn large pink">登入搖滾火箭</button>
+                        </div><!--.member-login end-->
+                        <!-- 登出 -->
+                        <div class="member-logout">
+                            <div class="member-name">ossian</div>
+                            <div><button class="btn small pink">登出</button></div>
+                        </div><!--.member-logout end-->
+                    </div><!--.login-and-logout end-->
+                    <!-- 抽獎次數 -->
+                    <div class="raffle-ticket">
+                        <h4 class="raffle-ticket-title"><span>抽獎次數</span></h4>
+                        <div class="raffle-ticket-count">剩 <em class="amount">0</em> 次</div>
+                    </div><!--.raffle-ticket end-->
+                    <!-- 通用卡 -->
+                     <div class="buy-card">儲值<em>500點通用卡</em>可增加一次轉動輪盤次數</div><!--.buy-card end-->
+                 </div><!--.member-panel end-->
+
+
+
+                 <!-- 轉盤 -->
+                  <div class="turntable-panel">
+                    <!-- 
+                        .turntable 有五種狀態，分別為：
+                        * 1. 未登入搖滾火箭：<div class="turntable"> (預設值)
+                        * 2. 可進行轉盤遊戲：<div class="turntable start">
+                        * 3. 活動未開始：<div class="turntable unstart">
+                        * 4. 活動已結束：<div class="turntable end">
+                        * 5. 抽獎次數已用盡：<div class="turntable unticket">
+                    -->
+                    <div class="turntable start">
+                        <!-- 未登入搖滾火箭 -->
+                        <div class="turntable-login">
+                            <figure class="turntable-bg"><img src="assets/images/turntable/bg.png" alt="轉盤"></figure><!--.turntable-bg end-->
+                            <button class="turntable-btn" disabled></button>
+                        </div><!--.turntable-login end-->
+                        <!-- 轉盤啟用 -->
+                        <div class="turntable-start">
+                            <figure class="turntable-bg">
+                                <img src="assets/images/turntable/active-bg.png" alt="轉盤">
+                                <img src="assets/images/turntable/turntable-bg.png" class="absolute-1" alt="轉盤">
+                                <img src="assets/images/turntable/turntable-border.png" class="absolute-2" alt="轉盤">
+                            </figure><!--.turntable-bg end-->
+                            <button class="turntable-btn" id="active"></button>
+                        </div><!--.turntable-start end-->
+                        <!-- 未活動未開始 -->
+                        <div class="turntable-unstart">
+                            <figure class="turntable-bg"><img src="assets/images/turntable/bg.png" alt="轉盤"></figure><!--.turntable-bg end-->
+                            <button class="turntable-btn" disabled></button>
+                        </div><!--.turntable-unstart end-->
+                        <!-- 活動已結束 -->
+                        <div class="turntable-end">
+                            <figure class="turntable-bg"><img src="assets/images/turntable/bg.png" alt="轉盤"></figure><!--.turntable-bg end-->
+                            <button class="turntable-btn" disabled></button>
+                        </div><!--.turntable-end end-->
+                        <!-- 抽獎次數已用盡 -->
+                        <div class="turntable-unticket">
+                            <figure class="turntable-bg"><img src="assets/images/turntable/bg.png" alt="轉盤"></figure><!--.turntable-bg end-->
+                            <button class="turntable-btn" id="unticket"></button>
+                        </div><!--.turntable-unticket end-->
+                    </div><!--.turntable end-->
+                  </div><!--.turntable-panel end-->
+
+
+
+                  <!-- 通路資訊 -->
+                   <div class="sales-panel">
+                    <!-- 實體通路 -->
+                    <dl class="store physical">
+                        <dt>通用卡<em>實體</em>購買管道</dt>
+                        <dd>
+                            全省<em>全家便利商店</em>均售。
+                            <div class="store-logo-group">
+                                <figure class="store-logo"><img src="assets/images/buy/01.png" alt="全家便利商店LOGO"></figure>
+                            </div><!--.store-logo-group end-->
+                        </dd>
+                    </dl><!--.store end-->
+                    <!-- 線上通路 -->
+                    <dl class="store online">
+                        <dt>通用卡<em>線上</em>購買管道</dt>
+                        <dd>
+                            <span class="break"><a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5300100239&p_orderType=6&showType=chessboardType" target="_blank">momo購物網</a>、
+                            <a href="https://ec.gashpoint.com/SalePackage/Index/7?categoryid=66" target="_blank">GASH商城</a>、</span>
+                            <a href="https://game.so-net.net.tw/game/index/ga20171107160126" target="_blank">So-net 遊戲點數</a>。
+                            <div class="store-logo-group">
+                                <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5300100239&p_orderType=6&showType=chessboardType" target="_blank" class="store-logo"><img src="assets/images/buy/02.png" alt="momo購物網"></a>
+                                <a href="https://ec.gashpoint.com/SalePackage/Index/7?categoryid=66" target="_blank" class="store-logo"><img src="assets/images/buy/03.png" alt="GASH商城"></a>
+                                <a href="https://game.so-net.net.tw/game/index/ga20171107160126" target="_blank" class="store-logo"><img src="assets/images/buy/04.png" alt="So-net 遊戲點數"></a>
+                            </div><!--.store-logo-group end-->
+                        </dd>
+                    </dl><!--.store end-->
+                   </div><!--.sales-panel end-->
+
+
+
+             </div><!--.game-container end-->
+
+        </section><!--.zone-1 end-->
+
+
+        <!-- 實體獎勵、虛擬獎勵、獎勵說明、得獎專區、注意事項............................................ -->
+         <section class="zone-2">
+            <!-- 實體獎勵、虛擬獎勵、獎勵說明 -->
+            <div class="gifts-container">
+                <!-- 實體獎勵 -->
+                <div class="physical-gifts-panel">
+                    <figure class="h3-title"><img src="assets/images/h3-title-1.png" alt="實體獎勵"></figure><!--.h3-title end-->
+                    <div class="physical-gifts-box">
+                        <ul class="physical-gifts-list">
+                            <li>
+                                <div class="gifts-box">
+                                    <h4>ASUS AI筆電</h4>
+                                    <div class="gifts-photo-amount">
+                                        <a href="https://www.asus.com/tw/laptops/for-home/vivobook/asus-vivobook-s-14-oled-s5406/" target="_blank"><img src="assets/images/gifts/01.png" class="gifts-photo" alt="ASUS AI 筆電"></a>
+                                        <div class="gifts-amount">數量 <em class="nb-amount">1</em> 台</div><!--.gifts-amount end-->
+                                    </div><!--.gifts-photo-amount end-->
+                                </div><!--.gifts-box end-->
+                            </li>
+                            <li>
+                                <div class="gifts-box">
+                                    <h4>童話鑰匙圈</h4>
+                                    <div class="gifts-photo-amount">
+                                        <img src="assets/images/gifts/02.png" class="gifts-photo" alt="童話鑰匙圈">
+                                        <div class="gifts-amount">數量 <em class="key-amount">20</em> 個</div><!--.gifts-amount end-->
+                                    </div><!--.gifts-photo-amount end-->
+                                </div><!--.gifts-box end-->
+                            </li>
+                            <li>
+                                <div class="gifts-box">
+                                    <h4>天外滑鼠墊</h4>
+                                    <div class="gifts-photo-amount">
+                                        <img src="assets/images/gifts/03.png" class="gifts-photo" alt="天外滑鼠墊">
+                                        <div class="gifts-amount">數量 <em class="mo-mouse-amount">20</em> 個</div><!--.gifts-amount end-->
+                                    </div><!--.gifts-photo-amount end-->
+                                </div><!--.gifts-box end-->
+                            </li>
+                            <li>
+                                <div class="gifts-box">
+                                    <h4>童話滑鼠墊</h4>
+                                    <div class="gifts-photo-amount">
+                                        <img src="assets/images/gifts/04.png" class="gifts-photo" alt="童話滑鼠墊">
+                                        <div class="gifts-amount">數量 <em class="nfl-mouse-amount">20</em> 個</div><!--.gifts-amount end-->
+                                    </div><!--.gifts-photo-amount end-->
+                                </div><!--.gifts-box end-->
+                            </li>
+                        </ul>
+                    </div><!--.physical-gifts-box end-->
+                </div><!--.physical-gifts-panel end-->
+                <!-- 虛擬獎勵 -->
+                <div class="virtual-gifts-panel">
+                    <figure class="h3-title"><img src="assets/images/h3-title-2.png" alt="虛擬獎勵"></figure><!--.h3-title end-->
+                    <ul class="virtual-gifts-list">
+                        <li>
+                            <div class="gifts-icons"><img src="assets/images/icons/01.png" alt="虛寶"><img src="assets/images/icons/02.png" alt="虛寶"></div><!--.gifts-icons end-->
+                            <div class="gifts-name">
+                                童話-魔幣10000支票<br>
+                                天外-元寶10000
+                            </div><!--.gifts-name end-->
+                            <div class="gifts-probability">機率<em>1%</em></div><!--.gifts-probability end-->
+                        </li>
+                        <li>
+                            <div class="gifts-icons"><img src="assets/images/icons/03.png" alt="虛寶"><img src="assets/images/icons/04.png" alt="虛寶">
+                            </div><!--.gifts-icons end-->
+                            <div class="gifts-name">
+                                童話-魔幣5000支票<br>
+                                天外-元寶5000
+                            </div><!--.gifts-name end-->
+                            <div class="gifts-probability">機率<em>3%</em></div><!--.gifts-probability end-->
+                        </li>
+                        <li>
+                            <div class="gifts-icons"><img src="assets/images/icons/05.png" alt="虛寶"><img src="assets/images/icons/06.png" alt="虛寶">
+                            </div><!--.gifts-icons end-->
+                            <div class="gifts-name">
+                                童話-魔幣1000支票<br>
+                                天外-元寶1000
+                            </div><!--.gifts-name end-->
+                            <div class="gifts-probability">機率<em>18%</em></div><!--.gifts-probability end-->
+                        </li>
+                        <li>
+                            <div class="gifts-icons"><img src="assets/images/icons/07.png" alt="虛寶"><img src="assets/images/icons/08.png" alt="虛寶">
+                            </div><!--.gifts-icons end-->
+                            <div class="gifts-name">
+                                童話-赤焰布偶龍<br>
+                                天外-三國破碎光碎
+                            </div><!--.gifts-name end-->
+                            <div class="gifts-probability">機率<em>8%</em></div><!--.gifts-probability end-->
+                        </li>
+                        <li>
+                            <div class="gifts-icons"><img src="assets/images/icons/09.png" alt="虛寶"><img src="assets/images/icons/10.png" alt="虛寶">
+                            </div><!--.gifts-icons end-->
+                            <div class="gifts-name">
+                                童話-寵物降級香檳<br>
+                                天外-特殊英雄變身帖
+                            </div><!--.gifts-name end-->
+                            <div class="gifts-probability">機率<em>20%</em></div><!--.gifts-probability end-->
+                        </li>
+                        <li>
+                            <div class="gifts-icons"><img src="assets/images/icons/11.png" alt="虛寶"><img src="assets/images/icons/12.png" alt="虛寶">
+                            </div><!--.gifts-icons end-->
+                            <div class="gifts-name">
+                                童話-SP寵物甜心糖<br>
+                                天外-隨機英雄卡包
+                            </div><!--.gifts-name end-->
+                            <div class="gifts-probability">機率<em>50%</em></div><!--.gifts-probability end-->
+                        </li>
+                    </ul><!--.virtual-gifts-list end-->
+                </div><!--.virtual-gifts-panel end-->
+                <!-- 獎勵說明 -->
+                <div class="gifts-note-panel">
+                    <figure class="h3-title"><img src="assets/images/h3-title-3.png" alt="獎勵說明"></figure><!--.h3-title end-->
+                    <ul class="gifts-note-list">
+                        <li>若玩家抽到虛寶獎勵，可至『<em>置物櫃</em>』中領取獎勵。『獎勵』從置物櫃領出後，「<em>第一個登入遊戲的角色</em>」將會自動領取。如果開錯角色登入領取到『獎勵』無轉移服務。</li>
+                        <li>獎勵<em>不限制伺服器</em>領取且<em>回饋不限次數</em>。</li>
+                        <li>抽到虛寶獎勵可直接同時獲得「<em>童話online</em>」和「<em>天外online</em>」兩款遊戲的虛寶。若玩家在該遊戲沒有帳號，創建後也可至置物櫃做領取獎勵。</li>
+                    </ul>
+                </div><!--.gifts-note-panel end-->
+            </div><!--.gifts-container end-->
+            <!-- 得獎專區、注意事項 -->
+            <div class="photo-note-container">
+                <!-- 得獎專區 -->
+                <div class="photo-panel">
+                    <figure class="h3-title"><img src="assets/images/h3-title-4.png" alt="得獎專區"></figure><!--.h3-title end-->
+                    <figure class="gift-photo"><img src="assets/images/photo.png" alt="AI筆電中獎者照片"></figure><!--.gift-photo end-->
+                </div><!--.photo-panel end-->
+                <!-- 注意事項 -->
+                <div class="note-panel">
+                    <figure class="h3-title"><img src="assets/images/h3-title-5.png" alt="注意事項"></figure><!--.h3-title end-->
+                    <ol class="note-list">
+                        <li>限定儲值通用卡指定面額 500 點數才可參與本次活動獲得獎品，其他面額點數、不同通路方式皆無法參與。</li>
+                        <li>活動開啟 2024/9/4 16:00~9/25 13:59 期間內購買才算是參與活動中，提前購買、太晚購買將無法參與。</li>
+                        <li>抽中實體獎勵之獎項中獎人，請主動與雷爵網絡洽繫領獎事宜，凡逾領獎期限 (活動結束後三個月內)，或未完成領獎程序，或不接受開立(免)扣繳憑單者，均視同自動放棄得獎權力。※請透過<a href="https://www.rocketgames.com.tw/service/service_report" target="_blank">客服中心-問題回報詢問</a>。</li>
+                        <li>本活動實體獎勵「ASUS AI 筆電」，限『得獎者本人』親至本公司進行領取。領取完畢後，需拍照，官方後續會將此照片進行處理後將於本活動頁上得獎區中更新。※如中獎者為海外玩家，因疫情問題無法親領，可請台灣地區友人協助代領，詳細相關規定與方式，請至<a href="https://www.rocketgames.com.tw/service/service_report" target="_blank">客服中心-問題回報功能詢問</a>。</li>
+                        <li>本活動實體獎勵「童話/天外電競防水滑鼠墊」、「童話鑰匙圈」會以郵寄方式寄送，獎項不寄送海外地區，無法寄送之海外地址視同放棄獎勵資格。</li>
+                        <li>本活動獎項以實物為準，中獎人不得要求更換、轉讓他人或折換現金，除獎項外其他衍生之相關費用由中獎者自行負擔。</li>
+                        <li>依中華民國稅法規定，獎項金額超過新台幣 1,000，得獎人須依規定繳交相關單據，並提供身分證件以供核對身份；獎項金額超過新台幣 20,000，國內玩家需支付 10% 稅額 (國外玩家20%) 給予雷爵網絡以便代扣稅金，扣繳義務人為活動得獎人。價格依照原公告價格計算。</li>
+                        <li>若中獎玩家帳號的登記資料有誤，導致客服人員無法與玩家取得連繫，或資料回傳後核實身份錯誤，或不願意支付 10% 稅額，均視同放棄領獎，請玩家特別留意。※此點請務必注意，如會員資料不屬實，無法提出相關文件證明是帳號持有本人，視為放棄領獎資格。</li>
+                        <li>若玩家放棄領獎，則雷爵網絡將不另外抽出中獎人以遞補空缺。</li>
+                        <li>雷爵網絡保有活動修改、取消、暫停、完善之權利，如有未盡事宜悉依雷爵網絡相關規定，如遇不可抗力之事由導致獎品內容變更，雷爵網絡有權變更獎項，改有等值商品取代之，且雷爵網絡不負獎項之任何維護或保固責任。並得隨時補充公告說明。</li>
+                    </ol><!--.note-list end-->
+                </div><!--.note-panel end-->
+            </div><!--.photo-note-container end-->
+         </section><!--.zone-2 end-->
+
+
+    </div><!--.ossian end-->
+
+
+    <!-- 側邊欄................................................................................... -->
+    <dl class="fixed">
+        <dt><img src="assets/images/fixed/title.png"></dt>
+        <dd>
+            <ul class="fixed-links">
+                <li><a href="query.html"><img src="assets/images/fixed/query.png" alt="紀錄查詢"></a></li>
+                <li><a href="index.html"><img src="assets/images/fixed/home.png" alt="回到首頁"></a></li>
+            </ul>
+        </dd>
+    </div>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            const jsonPath  = "http://127.0.0.1:5500/gifts.json";  // 需要使用 utf-8
+            // const gameStart = "2024-07-04T16:00:00";
+            // const gameEnd = "2024-09-25T13:59:59";
+
+            // 這個 function 用來處理 AJAX 請求
+            function fetchData(callback) {
+                $.ajax({
+                    url: jsonPath,
+                    dataType: 'json',
+                    success: callback,  // 請求成功後呼叫的函數
+                    error: function (error) {
+                        console.error('Error:', error);
+                    }
+                });
+            }
+
+            // 初始化轉盤的相關資訊。
+            // 如會員ID、抽獎次數、筆電數量、鑰匙圈數量、天外滑鼠墊數量、童話滑鼠墊數量及顯示會員登出及登入的畫面。
+            function initializeData(jsonData) {
+                // 檢查 memberID 是否有值 (有任意值表示會員已登入，空值表示會員未登入)
+                if (jsonData.memberID) {
+                    $('.ossian').addClass('logout');                          // 如果會員已登入，則給 .ossian 新增 .logout
+                    $('.amount').text(jsonData.tickets);                      // 讀取剩餘抽獎次數
+                    $('.member-name').text(jsonData.memberID);                // 讀取會員名稱
+                    $('.nb-amount').text(jsonData.aiNotebookAmount);          // 讀取 AI 筆電數量
+                    $('.key-amount').text(jsonData.keyRingAmount);            // 讀取鑰匙圈數量
+                    $('.mo-mouse-amount').text(jsonData.moMousePadAmount);    // 讀取天外滑鼠墊數量
+                    $('.nfl-mouse-amount').text(jsonData.nflMousePadAmount);  // 讀取童話滑鼠墊數量
+                } else {
+                    $('.ossian').removeClass('logout');                       // 如果會員未登入，則移除 .ossian 的 .logout
+                }
+            }
+
+            // 更新轉盤狀態
+            function updateTurntable(jsonData) {
+                const startDateTime   = new Date(jsonData.gameStart);  // 活動開始時間
+                const endDateTime     = new Date(jsonData.gameEnd);    // 活動截止時間
+                const currentDateTime = new Date();                    // 當前時間
+                const turntable       = $(".turntable");               // 取得 .turntable 元素
+
+                /*
+                這個 function 會根據特定條件動態新增或移除 class
+                * condition：[Bool]，用於判斷是否應該新增或移除 class。
+                * className：[String]，CSS class 的名稱。
+                * 當 condition 為 true 時，toggleClass 會新增 className 到 turntable 元素。
+                * 當 condition 為 false 時，toggleClass 會從 turntable 元素中移除 className。
+                */
+                function updateClass(condition, className) {
+                    turntable.toggleClass(className, condition); // 指定目標元素
+                }
+
+                // 檢查 memberID 是否有值 (有任意值表示會員已登入，空值表示會員未登入)
+                if (jsonData.memberID) {                                                                       // 會員已登入的情況
+                    // condition 的條件及對應的 className
+                    updateClass(currentDateTime >= startDateTime && currentDateTime <= endDateTime, "start");  // 活動期間內
+                    updateClass(currentDateTime < startDateTime, "unstart");                                   // 活動未開始
+                    updateClass(currentDateTime > endDateTime, "end");                                         // 活動結束
+                    updateClass(jsonData.tickets < 1, "unticket");                                             // 當 json 中的 tickets 小於 1，表示抽獎次數已用盡
+                } else {                                                                                       // 會員未登入的情況
+                    turntable.removeClass("start unstart end unticket");                                       // 移除 class
+                }
+            }
+
+            // 啟用轉盤
+            function activateTurntable() {
+                const button = $('#active');                                      // 指定按鈕元素
+                button.prop('disabled', true);                                    // 將按鈕狀態設為 disabled
+
+                fetchData(function (jsonData) {
+                    if (jsonData.tickets > 0) {                                   // 如果抽獎次數大於 0
+
+                        $('.absolute-1').addClass('rotate-bg');                   // 為.absolute-1加上旋轉的動畫，動畫長度四秒，順時鐘旋轉。
+                        $('.absolute-2').addClass('rotate-border');               // 為.absolute-2加上旋轉的動畫，動畫長度三秒，逆時鐘旋轉。
+                        button.addClass('jump');                                  // 增加按鈕動畫
+
+                        setTimeout(() => {
+                            button.prop('disabled', false);                       // 四秒後啟用按鈕
+                            $('.absolute-1').removeClass('rotate-bg');            // 四秒後移除 .rotate-bg
+                            $('.absolute-2').removeClass('rotate-border');        // 四秒後移除 .rotate-border
+                            button.removeClass('jump');                           // 移除按鈕動畫
+                            // 呼叫 sweetalert2 顯示中獎訊息
+                            const winningGift = jsonData.gifts[jsonData.giftWinning]; // 取得 json 的 giftWinning 中獎項目
+                            Swal.fire({
+                                title: '恭喜！你贏得了<br>' + winningGift.name,
+                                html: '<img src="'+winningGift.image+'" style="max-width: 100%; height: auto;">'
+                            });
+                        }, 4000);                                                 // 轉盤動畫總長度為四秒
+                    } else {
+                        button.prop('disabled', true);                            // 抽獎次數歸零後，button#active 的狀態改成 disabled
+                    }
+                });
+            }
+
+            // 初始化
+            fetchData(initializeData);  // 處理會員是否有登入的情況
+            fetchData(updateTurntable); // 處理轉盤的條件，例如，是否還有抽獎次數、是否在活動期間內...
+
+            // 按鈕點選後，讀取json，並執行轉盤的動畫
+            $('#active').on('click', activateTurntable);
+
+            // 當抽獎次數用盡後，使用者點選 #unticket 的按鈕後會出現購買通用卡的通路清單。
+            $("#unticket").click(function () {
+                Swal.fire({
+                    title: '請到以下通路購買通用卡',
+                    html: '<h3 class="card">儲值500點可獲得一次抽獎機會喔!</h3><br><ul class="shop-list"><li><strong>實體通路</strong>全台全家便利商店</li><li><strong>線上通路</strong><a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=5300100239&p_orderType=6&showType=chessboardType" target="_blank">momo購物網</a>、<a href="https://ec.gashpoint.com/SalePackage/Index/7?categoryid=66" target="_blank">GASH商城</a>、<a href="https://game.so-net.net.tw/game/index/ga20171107160126" target="_blank">So-net</a>。</li></ul>',
+                    confirmButtonText: 'OK'
+                });
+            });
+
+
+
+        });
+
+
+
+
+    </script>
+
+
+</body>
+</html>

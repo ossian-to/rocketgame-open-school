@@ -1,0 +1,1140 @@
+@charset "UTF-8";
+@import "initial";
+
+// 載入思源黑體，使用方式如下
+// font-family: 'Noto Sans TC', sans-serif;
+// font-weight: 900;
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+// 英文粗體
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  transition: all 0.3s;
+}
+
+// 修正 sweetalert2.js 會在 body 的標籤下增加 padding-right 的問題，猜測是 sweetalert2.js 要扣除卷軸寬度。
+body {
+  padding-right: 0 !important;
+}
+
+figure {
+  margin: 0;
+}
+
+dl,
+dl dt,
+dl dd {
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+.ossian {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1920px;
+  font-weight: bold;
+  .member-login {
+    display: block;
+  }
+  .member-logout {
+    display: none;
+  }
+  &.logout {
+    .member-login {
+      display: none;
+    }
+    .member-logout {
+      display: block;
+    }
+  }
+}
+
+.zone-1 {
+  padding: 0 1em;
+  background-color: $custom-1;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+// 網站標題
+
+.site-title {
+  position: absolute;
+  //   padding: 11em 0 0 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  img {
+    width: 100%;
+    max-width: 824px;
+  }
+}
+
+// LOGO's
+
+ul.logos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  // flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+  width: 100%;
+  z-index: 2;
+  li {
+    max-width: 700px;
+    width: 100%;
+  }
+}
+
+// 搖滾火箭
+
+.rocket-games {
+  display: inline-block;
+  max-width: 224px;
+  transform: scale(1);
+  &:hover {
+    transform: scale(0.9);
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.products-logo {
+  display: flex;
+  align-items: center;
+  // justify-content: flex-end;
+  gap: 1em;
+  // max-width: 331px;
+  > .nfl {
+    max-width: 161px;
+  }
+  > .mo {
+    max-width: 170px;
+  }
+  .product-logo {
+    transform: scale(1);
+    &:hover {
+      transform: scale(0.9);
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// 活動時間及說明
+
+.time-description {
+  &.w-100 {
+    width: 100%;
+  }
+}
+
+.act-container {
+  margin: 0 auto;
+}
+
+// 活動時間
+
+dl.act-time {
+  position: relative;
+  margin: 0 auto;
+  width: calc(100% - 2em);
+  > dd {
+    padding: 0.75em 1em 2em 1em;
+    font-size: 1.5em;
+    color: $custom-3;
+    text-align: center;
+    background-color: $custom-4;
+    background-image: url(../images/paper/dot-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+.yellow-title {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.h2-title {
+  margin: 0 auto;
+  max-width: 293px;
+  > img {
+    width: 100%;
+  }
+}
+
+.h3-title {
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  max-width: 195px;
+  > img {
+    width: 100%;
+  }
+}
+
+// 活動說明
+
+.act-description {
+  position: relative;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.4;
+  text-align: justify;
+  border-radius: 1.25rem;
+  background-color: $custom-3;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0.5em;
+    width: calc(100% - 1em);
+    height: 88px;
+    background-image: url(../images/paper/card-500-point.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  em {
+    color: $custom-5;
+    &.game {
+      color: $custom-6;
+    }
+  }
+}
+
+// 員資訊、轉盤及通路
+
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 0 auto;
+  padding: 2em 0;
+  max-width: 1400px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.member-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0 auto;
+  padding: 1rem;
+  // max-width: 380px;
+  // width: 100%;
+  color: $custom-7;
+  background-color: $custom-6;
+  background-image: url(../images/member-panel-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  border: 10px solid $custom-4;
+  border-radius: 1.25em;
+  // flex: 1;
+}
+
+.raffle-ticket-title {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/line.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  > span {
+    display: inline-block;
+    padding: 0 1rem;
+    background-color: $custom-6;
+  }
+}
+
+.raffle-ticket-count {
+  padding: 0.5rem 0 3rem 0;
+  > em {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5em;
+  }
+}
+
+.buy-card {
+  font-size: 1.25rem;
+  text-align: center;
+  > em {
+    margin: 0 0.25rem;
+    padding: 0 0.25rem;
+    color: $custom-6;
+    background-color: $custom-7;
+    border-radius: 5px;
+  }
+}
+
+// 會員登入、登出
+
+.member-login {
+  padding: 0.5rem 0;
+}
+
+.member-name {
+  padding: 0 0 0.5rem 0;
+  font-size: 1.5em;
+}
+
+// 通路資訊
+
+.sales-panel {
+  display: flex;
+  // flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1em;
+  // max-width: 380px;
+  // width: 100%;
+  // flex: 1;
+}
+
+dl.store {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 0.833em;
+  color: $custom-9;
+  dt,
+  dd {
+    padding: 1rem;
+  }
+  dt {
+    font-size: 1em;
+    background-color: white;
+  }
+  dd {
+    font-size: 1rem;
+    background-image: url(../images/buy/bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100%;
+  }
+  &.physical {
+    dt {
+      > em {
+        color: $custom-10;
+      }
+    }
+    dd {
+      background-color: $custom-6;
+      > em {
+        color: $custom-10;
+      }
+    }
+  }
+  &.online {
+    dt {
+      > em {
+        color: $custom-8;
+      }
+    }
+    dd {
+      color: white;
+      background-color: $custom-8;
+      .break {
+        display: block;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.store-logo-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0 0.5rem 0;
+}
+.store-logo {
+  max-width: 90px;
+  &:hover {
+    transform: scale(0.85);
+  }
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+// 轉盤
+
+.turntable-panel {
+  position: relative;
+  width: 590px;
+  border: 1px solod red;
+}
+
+.turntable-bg {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.turntable-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  appearance: none;
+  outline: none;
+  background-color: transparent;
+  // background-image: url(../images/turntable/login.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  &:disabled {
+    cursor: initial;
+  }
+}
+
+// 轉盤未登入
+
+.turntable-login {
+  > .turntable-btn {
+    background-image: url(../images/turntable/login.png);
+  }
+}
+
+// 轉盤啟用
+
+.turntable-start {
+  .turntable-bg {
+    img {
+      &.absolute-1,
+      &.absolute-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  > .turntable-btn {
+    background-image: url(../images/turntable/go.png);
+  }
+}
+
+.rotate-bg {
+  animation: rotate6 4s ease-in-out;
+}
+.rotate-border {
+  animation: rotate5 3s ease-in-out;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes rotate5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-2160deg);
+  }
+}
+
+@keyframes rotate6 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(2160deg);
+  }
+}
+
+.jump {
+  animation: jump 0.3s;
+}
+
+@keyframes jump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.jump2 {
+  animation: jump2 1s ease-in-out;
+}
+
+@keyframes jump2 {
+  0% {
+    transform: scale(1);
+  }
+  16% {
+    transform: scale(0.85);
+  }
+  32% {
+    transform: scale(1);
+  }
+  48% {
+    transform: scale(0.85);
+  }
+  64% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#active {
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+  border-radius: 50%;
+}
+
+// 活動未開始
+
+.turntable-unstart {
+  > .turntable-btn {
+    background-image: url(../images/turntable/unstart.png);
+  }
+}
+
+// 活動已結束
+
+.turntable-end {
+  > .turntable-btn {
+    background-image: url(../images/turntable/end.png);
+  }
+}
+
+// 抽獎次數已用盡
+
+.turntable-unticket {
+  > .turntable-btn {
+    background-image: url(../images/turntable/unticket.png);
+  }
+}
+
+// 轉盤狀態設定
+
+.turntable {
+  // 轉盤未登入
+  .turntable-login {
+    display: block;
+  }
+  // 轉盤啟用
+  .turntable-start {
+    display: none;
+  }
+  // 活動未開始
+  .turntable-unstart {
+    display: none;
+  }
+  // 活動已結束
+  .turntable-end {
+    display: none;
+  }
+  // 抽獎次數已用盡
+  .turntable-unticket {
+    display: none;
+  }
+
+  &.start {
+    // 轉盤未登入
+    .turntable-login {
+      display: none;
+    }
+    // 轉盤啟用
+    .turntable-start {
+      display: block;
+    }
+    // 活動未開始
+    .turntable-unstart {
+      display: none;
+    }
+    // 活動已結束
+    .turntable-end {
+      display: none;
+    }
+    // 抽獎次數已用盡
+    .turntable-unticket {
+      display: none;
+    }
+  }
+
+  &.unstart {
+    // 轉盤未登入
+    .turntable-login {
+      display: none;
+    }
+    // 轉盤啟用
+    .turntable-start {
+      display: none;
+    }
+    // 活動未開始
+    .turntable-unstart {
+      display: block;
+    }
+    // 活動已結束
+    .turntable-end {
+      display: none;
+    }
+    // 抽獎次數已用盡
+    .turntable-unticket {
+      display: none;
+    }
+  }
+
+  &.end {
+    // 轉盤未登入
+    .turntable-login {
+      display: none;
+    }
+    // 轉盤啟用
+    .turntable-start {
+      display: none;
+    }
+    // 活動未開始
+    .turntable-unstart {
+      display: none;
+    }
+    // 活動已結束
+    .turntable-end {
+      display: block;
+    }
+    // 抽獎次數已用盡
+    .turntable-unticket {
+      display: none;
+    }
+  }
+
+  &.unticket {
+    // 轉盤未登入
+    .turntable-login {
+      display: none;
+    }
+    // 轉盤啟用
+    .turntable-start {
+      display: none;
+    }
+    // 活動未開始
+    .turntable-unstart {
+      display: none;
+    }
+    // 活動已結束
+    .turntable-end {
+      display: none;
+    }
+    // 抽獎次數已用盡
+    .turntable-unticket {
+      display: block;
+    }
+  }
+}
+
+// .zone-2
+
+.zone-2 {
+  padding: 0 1em;
+  background-image: url(../images/pen-paper.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: $custom-11;
+}
+
+.gifts-container {
+  display: flex;
+  // align-items: stretch;
+  justify-content: center;
+  gap: 1em;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1400px;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: $custom-6;
+  border-radius: 1.583em;
+}
+
+// 實體獎勵
+
+.physical-gifts-panel {
+  // max-width: 500px;
+  width: 100%;
+  // flex: 2;
+}
+
+.physical-gifts-box {
+  padding: 1rem;
+  width: 100%;
+  background-color: #212029;
+  border-radius: 1.25rem;
+}
+
+// 實體獎勵清單
+
+ul.physical-gifts-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  li {
+    width: calc(50% - 1rem);
+  }
+}
+
+.gifts-box {
+  position: relative;
+  > h4 {
+    margin: 0;
+    padding: 0.5em 0;
+  }
+}
+
+.gifts-photo-amount {
+  width: 100%;
+  img {
+    max-width: 202px;
+    width: 100%;
+  }
+}
+
+.gifts-amount {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  color: $custom-9;
+  text-align: center;
+  font-size: 1.25rem;
+  > em {
+    color: $custom-8;
+  }
+}
+
+// 虛擬獎勵
+
+.virtual-gifts-panel {
+  // max-width: 470px;
+  width: 100%;
+  // flex: 1.75;
+}
+
+.gifts-note-panel {
+  // flex: 1;
+  color: $custom-1;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+// 虛擬獎勵清單
+
+ul.gifts-note-list {
+  margin: 0;
+  padding: 0 0 0 1em;
+  li {
+    padding: 1rem 0;
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.1);
+    &:nth-child(1) {
+      padding-top: 0;
+    }
+    > em {
+      color: $custom-12;
+    }
+    &:nth-last-child(1) {
+      border-bottom: unset;
+    }
+  }
+}
+
+// 虛擬獎勵
+
+ul.virtual-gifts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    gap: 1rem;
+    padding: 0.85rem;
+    width: 100%;
+    // font-size: 1.25rem;
+    color: $custom-1;
+    background-color: $custom-4;
+    border-radius: 10px;
+    line-height: 1;
+  }
+}
+
+.gifts-name {
+  max-width: 500px;
+  width: 100%;
+  flex: 1;
+}
+
+// 機率
+
+.gifts-probability {
+  width: 50px;
+  font-size: 1.125rem;
+  text-align: center;
+  > em {
+    display: block;
+    font-size: 1.375rem;
+    color: $custom-8;
+  }
+}
+
+// 虛寶 icon
+
+.gifts-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  // > img{
+  //     width: 50px;
+  // }
+}
+
+// 得獎專區、注意事項
+
+.photo-note-container {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 0 auto;
+  padding: 2em 0;
+  max-width: 1200px;
+}
+
+// 得獎專區
+
+.photo-panel {
+  text-align: center;
+}
+
+.gift-photo {
+  margin: 0 auto;
+  // width: 440px;
+  img {
+    width: 100%;
+  }
+}
+
+// 注意事項
+
+.note-panel {
+  max-width: 960px;
+}
+
+// .note-list{
+//     width: 100%;
+// }
+
+// 注意事項清單
+
+.note-list {
+  li {
+    color: $custom-1;
+    text-align: justify;
+    a {
+      color: $custom-12;
+    }
+  }
+}
+
+// 按鈕
+
+.btn {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  line-height: 1.15;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid $border-default-color;
+  border-radius: 0.25em;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6) inset;
+  cursor: pointer;
+  &.large {
+    font-size: 1.5em;
+  }
+  &.medium {
+    font-size: 1.25em;
+  }
+  &.small {
+    font-size: 1em;
+  }
+  &.pink {
+    color: white;
+    background-color: $custom-8;
+    border-color: $custom-8;
+  }
+}
+
+// 自訂 sweetalert2 樣式 ............................................................
+
+.swal2-container {
+  font-family: $document-font-family;
+}
+
+div:where(.swal2-container) .swal2-html-container {
+  margin: initial;
+  padding: 0.5em 1em 1em 1em;
+}
+
+// 修改預設的文字顏色
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+  color: $custom-7;
+}
+
+// sweetalert2 包含 html 內容的容器
+
+.swal2-html-container {
+  a {
+    color: $custom-8;
+  }
+  strong {
+    display: inline-block;
+    margin-right: 0.35em;
+    padding: 0.125em 0.35em;
+    color: $custom-1;
+    background-color: white;
+    border-radius: 5px;
+  }
+}
+
+// sweetalert2 OK 的按鈕設定
+// 移除按鈕 outline
+
+.swal2-popup {
+  box-shadow: 0 3px 2px rgba(255, 255, 255, 0.5) inset;
+  background-color: $custom-4;
+  border: 5px solid $custom-1;
+  border-radius: 2em;
+  .swal2-styled {
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75) inset;
+    background-color: $custom-8;
+    border: 1px solid $custom-8;
+    border-radius: 5px;
+    appearance: none;
+    outline: none;
+  }
+}
+
+.swal2-popup .swal2-styled:focus,
+.swal2-close:focus {
+  box-shadow: none !important;
+}
+
+h3.card {
+  display: inline-block;
+  margin: 0 auto;
+  // margin-bottom: 1rem;
+  padding: 0.125em 0.5em;
+  color: white;
+  background-color: $custom-1;
+  border-radius: 5px;
+}
+ul.shop-list {
+  text-align: initial;
+  li {
+    margin: 0 1em 0 0;
+    padding: 0.15em 0 0.25em 0;
+    border-bottom: 1px dashed $custom-1;
+  }
+}
+
+// 清除按鈕區塊的 margin
+
+div:where(.swal2-container) div:where(.swal2-actions) {
+  margin: initial;
+}
+
+// 浮水標
+
+.fixed {
+  // position: fixed;
+  // bottom: 2em;
+  // right: 2em;
+  max-width: 240px;
+  z-index: 10;
+  dt,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+  dt {
+    img {
+      width: 100%;
+    }
+  }
+  dd {
+    padding: 0.5em 1em 1.5em 1em;
+    text-align: center;
+    background-color: $custom-4;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+  }
+}
+
+ul.fixed-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    max-width: 195px;
+    a {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.query-list-panel{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1em;
+}
+
+ul.query-list{
+    margin: 0;
+    padding: 2em 1em;
+    list-style: none;
+    color: white;
+    background-color: $custom-3;
+    border: 6px solid $custom-1;
+    border-radius: 1em;
+    li{
+        display: flex;
+        // flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        // gap: 1em;
+        padding: 1em 0;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    }
+}
+
+.query-list-pic{
+    max-width: 150px;
+    img{
+        width: 100%;
+    }
+}
+
+.gift-name-date{
+    // flex: 1;
+    h3{
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0 0 0.5rem 0;
+        color: $custom-4;
+    }
+}
+.gift-count{
+    em{
+        display: inline-block;
+        padding: 0.25em 0.5em;
+        color: $custom-1;
+        background-color: $custom-4;
+        border-radius: 1em;
+    }
+}
+
+ul.page-no{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35em;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 800px;
+    width: 100%;
+    list-style: none;
+    li{
+        font-size: 1.25em;
+        width: 2em;
+        height: 2em;
+        a{
+            padding: 0.15em 0.25em 0.25em 0.25em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            color: $custom-1;
+            border-radius: 50%;
+            background-color: white;
+            text-decoration: none;
+            &.active{
+                color: white;
+                background-color: $custom-8;
+            }
+        }
+    }
+}
+.btn-group{
+    padding: 0 1em 4em 1em;
+    text-align: center;
+}
+
+.show-gift{
+    font-size: 0.75em;
+}
+
+// RWD 自適應設定 ...................................................................
+
+@import "rwd";

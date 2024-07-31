@@ -1,0 +1,53 @@
+{
+  "memberID"         : "ossian",
+  "tickets"          : 103,
+  "aiNotebookAmount" : 1,
+  "keyRingAmount"    : 20,
+  "moMousePadAmount" : 20,
+  "nflMousePadAmount": 20,
+  "giftWinning"      : 0,
+  "gameStart"        : "2024-07-04T16:00:00",
+  "gameEnd"          : "2024-09-25T13:59:59",
+  "gifts"            : [
+    {
+      "name"  : "ASUS AI筆電<br><span class='show-gift'>請與客服中心回報聯繫領獎事宜</span>",
+      "image" : "assets/images/winning/01.png"
+    },
+    {
+      "name"  : "童話電競防水滑鼠墊<br><span class='show-gift'>請與客服中心回報聯繫領獎事宜</span>",
+      "image" : "assets/images/winning/02.png"
+    },
+    {
+      "name"  : "天外電競防水滑鼠墊<br><span class='show-gift'>請與客服中心回報聯繫領獎事宜</span>",
+      "image" : "assets/images/winning/03.png"
+    },
+    {
+      "name"  : "童話鑰匙圈<br><span class='show-gift'>請與客服中心回報聯繫領獎事宜</span>",
+      "image" : "assets/images/winning/04.png"
+    },
+    {
+      "name"  : "童話-魔幣10000支票<br>天外-元寶10000<br><span class='show-gift'>請至置物櫃領取</span>",
+      "image" : "assets/images/winning/05.png"
+    },
+    {
+      "name"  : "童話-魔幣5000支票<br>天外-元寶5000<br><span class='show-gift'>請至置物櫃領取</span>",
+      "image" : "assets/images/winning/06.png"
+    },
+    {
+      "name"  : "童話-魔幣1000支票<br>天外-元寶1000<br><span class='show-gift'>請至置物櫃領取</span>",
+      "image" : "assets/images/winning/07.png"
+    },
+    {
+      "name"  : "童話-赤焰布偶龍<br>天外-三國破碎光碎<br><span class='show-gift'>請至置物櫃領取</span>",
+      "image" : "assets/images/winning/08.png"
+    },
+    {
+      "name"  : "童話-寵物降級香檳<br>天外-特殊英雄變身帖<br><span class='show-gift'>請至置物櫃領取</span>",
+      "image" : "assets/images/winning/09.png"
+    },
+    {
+      "name"  : "童話-SP寵物甜心糖<br>天外-隨機英雄卡包<br><span class='show-gift'>請至置物櫃領取</span>",
+      "image" : "assets/images/winning/10.png"
+    }
+  ]
+}

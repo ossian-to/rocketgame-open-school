@@ -1,0 +1,290 @@
+@media only screen and (min-width: 0) {
+    // LOGO's
+    ul.logos{
+        flex-direction: column;
+    }
+    .products-logo{
+        justify-content: center;
+    }
+    ul.logos{
+        transform: scale(0.85);
+        li{
+            text-align: center;
+        }
+    }
+    .site-title{
+        padding: 80vw 0 0 0;
+    }
+    .zone-1 {
+        background-image: url(../images/bg-m.png);
+        background-size: contain;
+    }
+    // 活動時間及說明
+    .time-description {
+        padding-top: 240vw;
+        width: 100%;
+    }
+    .query-list-panel{
+        padding-top: 240vw;
+    }
+    .act-container{
+        max-width: 100%;
+    }
+    .act-description{
+        padding: 3rem 2rem 1rem 2rem;
+        border: 10px solid $custom-2;
+    }
+    // 會員資訊、轉盤及通路
+    .game-container{
+        flex-wrap: wrap;
+        // font-size: 1.25em;
+    }
+    .member-panel{
+        max-width: unset;
+        width: 100%;
+        flex: unset;
+    }
+    .sales-panel{
+        width: 100%;
+        flex-direction: column;
+        flex: unset;
+    }
+    // 實體獎勵、虛擬獎勵及獎勵說明
+    .gifts-container{
+        flex-wrap: wrap;
+    }
+    // 實體獎勵
+    .physical-gifts-panel{
+        max-width: 100%;
+        flex: unset;
+    }
+    // 實體獎勵清單
+    ul.physical-gifts-list{
+        li{
+            width: 100%;
+        }
+    }
+    // 虛擬獎勵
+    .virtual-gifts-panel{
+        max-width: 100%;
+        flex: unset;
+    }
+    // 虛擬獎勵清單
+    ul.virtual-gifts-list{
+        li{
+            font-size: 1rem;
+        }
+    }
+    // 虛擬獎勵的ICON
+    .gifts-icons{
+        flex-direction: row;
+        > img{
+            width: 35px;
+        }
+    }
+    .gifts-note-panel{
+        max-width: 100%;
+        flex: unset;
+    }
+    .photo-note-container{
+        flex-wrap: wrap;
+    }
+    // 得獎專區、注意事項
+    .photo-note-container{
+        flex-direction: column;
+    }
+    // 得獎專區
+    .gift-photo{
+        max-width: 440px;
+    }
+    .fixed{
+        position: initial;
+        bottom: initial;
+        right: inherit;
+        margin: 0 auto;
+        padding: 2em 1em;
+    }
+    ul.query-list{
+        li{
+            flex-direction: column;
+            gap: 0.5em;
+        }
+    }
+    .gift-name-date{
+        width: 100%;
+        text-align: center;
+    }
+    .gift-count{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 450px){
+    ul.logos{
+        transform: unset;
+    }
+    .site-title{
+        padding: 70vw 0 0 0;
+    }
+    // 實體獎勵清單
+    ul.physical-gifts-list{
+        li{
+            width: calc(50% - 1em);
+        }
+    }
+    // 虛擬獎勵清單
+    ul.virtual-gifts-list{
+        li{
+            font-size: 1.25rem;
+        }
+    }
+    // 虛擬獎勵的ICON
+    .gifts-icons{
+        flex-direction: row;
+        > img{
+            width: 50px;
+        }
+    }
+    ul.query-list{
+        li{
+            flex-direction: row;
+            gap: 1em;
+        }
+    }
+    .gift-name-date{
+        flex: 1;
+        text-align: unset;
+    }
+    .gift-count{
+        max-width: 100px;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    // LOGO's
+    ul.logos{
+        flex-direction: row;
+    }
+    .products-logo{
+        justify-content: flex-end;
+    }
+    ul.logos{
+        li{
+            text-align: unset;
+        }
+    }
+    .site-title{
+        padding: 11em 0 0 0;
+    }
+    .zone-1 {
+        background-image: url(../images/bg-600.png);
+        background-size: unset;
+    }
+    // 活動時間及說明
+    .time-description {
+        padding-top: 80em;
+    }
+    .query-list-panel{
+        padding-top: 80em;
+    }
+    .sales-panel{
+        flex-direction: row;
+    }
+    .photo-note-container{
+        flex-wrap: nowrap;
+    }
+    .fixed{
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        margin: initial;
+    }
+}
+
+@media only screen and (min-width: 830px){
+    .zone-1 {
+        background-image: url(../images/bg.png);
+    }
+    // 活動時間及說明
+    .time-description {
+        padding-top: 50em;
+        width: 50%;
+    }
+    .query-list-panel{
+        padding-top: 55em;
+    }
+    .act-container{
+        max-width: 520px;
+    }
+    .act-description{
+        padding: 3rem 3rem 1rem 3rem;
+        border: 1rem solid $custom-2;
+    }
+    .member-panel{
+        max-width: 380px;
+        flex: 1;
+    }
+    // 實體獎勵清單
+    ul.physical-gifts-list{
+        li{
+            width: calc(25% - 1em);
+        }
+    }
+    .virtual-gifts-panel{
+        max-width: calc(50% - 1em);
+        // flex: unset;
+    }
+    .gifts-note-panel{
+        max-width: calc(50% - 1em);
+        // flex: unset;
+    }
+    // 得獎專區、注意事項
+    .photo-note-container{
+        flex-direction: row;
+    }
+    // 得獎專區
+    .gift-photo{
+        width: 440px;
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    // 會員資訊、轉盤及通路
+    .game-container{
+        flex-wrap: unset;
+    }
+    .member-panel{
+        max-width: 380px;
+    }
+    .sales-panel{
+        width: unset;
+        max-width: 380px;
+        flex-direction: column;
+        flex: 1;
+    }
+    // 實體獎勵、虛擬獎勵及獎勵說明
+    .gifts-container{
+        flex-wrap: nowrap;
+    }
+    // 實體獎勵
+    .physical-gifts-panel{
+        max-width: 500px;
+        flex: 2;
+    }
+    // 實體獎勵清單
+    ul.physical-gifts-list{
+        li{
+            width: calc(50% - 1rem);
+        }
+    }
+    .virtual-gifts-panel{
+        max-width: 470px;
+        flex: 1.75;
+    }
+    .gifts-note-panel{
+        flex: 1;
+    }
+}
